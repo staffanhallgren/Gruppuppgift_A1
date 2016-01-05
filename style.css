@@ -1,0 +1,14 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body {
+	font-family: Roboto, Georgia, sans-serif;
+}
+
+
+#about section {
+	margin: 100px 5%;
+}
+
+#statement p, h2 {
+	text-align: center;
+}
