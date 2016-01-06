@@ -1,9 +1,42 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
-body {
-	font-family: Roboto, Georgia, sans-serif;
+{
+	margin: 0 auto;
+	padding: 0px;
 }
 
+body {
+	font-family: Roboto, Georgia, sans-serif;
+	background-image: url(media/img/background.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: contain;
+	
+}
+header {
+
+	
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	
+	position: fixed;
+	top: 0px;
+	
+	height: 15vh;
+	width:100%;
+	
+	background-color: rgba(1,1,1,0.5);
+}
+
+
+#logo-img {
+width: 15%;
+}
+
+#menu-img {
+	width: 10%;
+}
 
 #about section {
 	margin: 100px 5%;
