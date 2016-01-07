@@ -1,7 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
+{
+	margin: 0 auto;
+	padding: 0px;
+}
+
 body {
 	font-family: Roboto, Georgia, sans-serif;
+	background-image: url(media/img/background.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size:cover
+	
 }
 
 header {
@@ -132,8 +142,6 @@ li:target~li a {
 
 /* ---- End of Navbar ---- */
 
-
-}
 
 #about section {
 	margin: 100px 5%;
