@@ -13,30 +13,135 @@ body {
 	background-size:cover
 	
 }
-header {
 
-	
-	justify-content: space-between;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	
+header {
 	position: fixed;
 	top: 0px;
-	
-	height: 15vh;
+	height: 10vh;
 	width:100%;
 	
+}
+
+/*---------------
+  Mobile Navbar
+----------------*/
+
+nav {
 	background-color: rgba(1,1,1,0.5);
+	min-height: 50px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
 }
 
-
-#logo-img {
-width: 15%;
+nav > img {
+	height: 50px;
 }
 
-#menu-img {
-	width: 10%;
+nav ul {
+	color: #fff;
+	margin: 0;
+	padding: 0;
 }
+
+nav li:first-child ~ li {
+	border-top: 2px groove;
+}
+
+nav li:first-child ~ li a {
+	display: block;
+	text-decoration: none;
+	padding: 5px;
+	box-sizing: border-box;
+	line-height: 2.5;
+}
+
+nav a:link, nav a:visited {
+	color: #fff;
+}
+
+li {
+	list-style-type: none;
+	height: 0px;
+	display: none;
+	text-align: center;
+}
+
+li img {
+	height: 50px;
+	margin: 0;
+	padding: 0;
+}
+
+li:first-child{
+	display: block;
+}
+
+a.menuopen, a.menuclose {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 50px;
+}
+
+li:target .menuclose {
+	z-index: 1000;
+}
+
+li:target~li {
+	display: block;
+	height: 50px;
+}
+
+/* ---Potential fix for 'Home' being bumped in 
+by logo (if floated left) in transition.
+
+li:target~li a {
+	display: block;
+	width: 70%;
+	margin: auto;
+}
+*/
+
+/*---------------
+  Desktop Navbar
+----------------*/
+
+@media screen and (min-width: 641px) {
+	
+	nav > img {
+		float: left;
+	}
+		
+	nav ul {
+		display: flex;
+		height: 50px;
+		justify-content: space-around;
+	}
+	
+	nav ul li {
+		display: inline;
+		height: auto;
+		flex-grow: 1;
+	}
+	
+	nav li:first-child ~li {
+		border-top: none;
+	}
+	
+	nav li:first-child ~ li a {
+		padding: 5px auto;
+	}
+	
+	#menutoggle {
+		display: none;
+	}
+}
+
+/* ---- End of Navbar ---- */
+
 
 #about section {
 	margin: 100px 5%;
