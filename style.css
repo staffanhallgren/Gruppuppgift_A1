@@ -15,7 +15,7 @@ body {
 }
 header {
 
-	
+	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -44,4 +44,19 @@ width: 15%;
 
 #statement p, h2 {
 	text-align: center;
+}
+
+section#cases {
+	display: flex;
+	flex-direction: row;
+	height:25vh;
+	
+	justify-content: space-between;
+}
+
+section#cases img { 
+	width: 50%;
+	
+
+
 }
