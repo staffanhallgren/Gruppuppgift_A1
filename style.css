@@ -139,7 +139,7 @@ li:target~li a {
 
 /* Client section */
 
-#about, #cases, #clients, #contacts {
+#about, #work, #contact {
   background-color: rgba(238, 250, 250, 0.8);
 }
 
