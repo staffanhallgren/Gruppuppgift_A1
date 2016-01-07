@@ -1,10 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
-{
-	margin: 0 auto;
-	padding: 0px;
-}
-
 body {
 	font-family: Roboto, Georgia, sans-serif;
 	background-image: url(media/img/background.jpg);
@@ -98,12 +93,14 @@ li:target~li {
 /* ---Potential fix for 'Home' being bumped in 
 by logo (if floated left) in transition.
 
+
 li:target~li a {
 	display: block;
 	width: 70%;
 	margin: auto;
 }
 */
+
 
 /*---------------
   Desktop Navbar
@@ -131,17 +128,42 @@ li:target~li a {
 		border-top: none;
 	}
 	
-	nav li:first-child ~ li a {
-		padding: 5px auto;
-	}
 	
 	#menutoggle {
 		display: none;
 	}
 }
 
+
 /* ---- End of Navbar ---- */
 
+/* Client section */
+
+#about, #work, #contact {
+  background-color: rgba(238, 250, 250, 0.8);
+}
+
+#clients {
+  display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+}
+
+#clients img {
+  max-width: 100%;
+  margin: 0 10px;
+  filter: gray; /* IE6-9*/
+  -webkit-filter: grayscale(1); /* Chrome & Safari 6+ */
+}
+
+#clients img:hover {
+  filter: none;
+  -webkit-filter: none;
+}
+
+/* end of client section */
 
 #about section {
 	margin: 100px 5%;
