@@ -13,15 +13,15 @@ body {
 	min-height: 100vh;
 }
 
-<<<<<<< HEAD
+
 header {
-=======
+
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	
->>>>>>> be437d008223e38ca94309b0e8cdc2f4a9ce1531
+
 	position: fixed;
 	top: 0px;
 	height: 10vh;
