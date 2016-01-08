@@ -13,15 +13,7 @@ body {
 	min-height: 100vh;
 }
 
-
 header {
-
-	display: flex;
-	justify-content: space-between;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	
-
 	position: fixed;
 	top: 0px;
 	height: 10vh;
@@ -215,7 +207,6 @@ li:target~li a {
 }
 
 
-
 footer {
 	color: #fff;
 	background-color: #000;
@@ -224,19 +215,3 @@ footer {
 	line-height: 5;
 	text-align: center;
 }
-
-section#cases {
-	display: flex;
-	flex-direction: row;
-	height:25vh;
-	
-	justify-content: space-between;
-}
-
-section#cases img { 
-	width: 50%;
-	
-
-
-}
-
