@@ -5,8 +5,12 @@ body {
 	background-image: url(media/img/background.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-size:cover
+	background-size:cover;
 	
+	/*Sticky Footer fix*/
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
 header {
@@ -14,7 +18,11 @@ header {
 	top: 0px;
 	height: 10vh;
 	width:100%;
-	
+}
+
+main {
+	/*Sticky Footer fix*/
+	flex-grow: 1;
 }
 
 /*---------------
@@ -170,5 +178,14 @@ li:target~li a {
 }
 
 #statement p, h2 {
+	text-align: center;
+}
+
+footer {
+	color: #fff;
+	background-color: #000;
+	font-size: 0.6em;
+	height: 50px;
+	line-height: 5;
 	text-align: center;
 }
