@@ -5,8 +5,12 @@ body {
 	background-image: url(media/img/background.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-size:cover
+	background-size:cover;
 	
+	/*Sticky Footer fix*/
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
 header {
@@ -14,7 +18,11 @@ header {
 	top: 0px;
 	height: 10vh;
 	width:100%;
-	
+}
+
+main {
+	/*Sticky Footer fix*/
+	flex-grow: 1;
 }
 
 /*---------------
@@ -42,6 +50,10 @@ nav ul {
 
 nav li:first-child ~ li {
 	border-top: 2px groove;
+}
+
+nav li:first-child ~ li:hover {
+	background-color: rgba(10,10,10,0.5);
 }
 
 nav li:first-child ~ li a {
@@ -128,6 +140,9 @@ li:target~li a {
 		border-top: none;
 	}
 	
+	nav li:first-child ~li.hover {
+		background-color: rgba(10,10,10,0.5);
+	}
 	
 	#menutoggle {
 		display: none;
@@ -191,3 +206,12 @@ li:target~li a {
 	text-align: center;
 }
 
+
+footer {
+	color: #fff;
+	background-color: #000;
+	font-size: 0.6em;
+	height: 50px;
+	line-height: 5;
+	text-align: center;
+}
