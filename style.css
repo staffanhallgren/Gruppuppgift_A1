@@ -52,6 +52,10 @@ nav li:first-child ~ li {
 	border-top: 2px groove;
 }
 
+nav li:first-child ~ li:hover {
+	background-color: rgba(10,10,10,0.5);
+}
+
 nav li:first-child ~ li a {
 	display: block;
 	text-decoration: none;
@@ -136,6 +140,9 @@ li:target~li a {
 		border-top: none;
 	}
 	
+	nav li:first-child ~li.hover {
+		background-color: rgba(10,10,10,0.5);
+	}
 	
 	#menutoggle {
 		display: none;
