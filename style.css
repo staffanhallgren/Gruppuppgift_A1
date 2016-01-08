@@ -13,7 +13,15 @@ body {
 	min-height: 100vh;
 }
 
+<<<<<<< HEAD
 header {
+=======
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	
+>>>>>>> be437d008223e38ca94309b0e8cdc2f4a9ce1531
 	position: fixed;
 	top: 0px;
 	height: 10vh;
@@ -207,6 +215,7 @@ li:target~li a {
 }
 
 
+
 footer {
 	color: #fff;
 	background-color: #000;
@@ -215,3 +224,19 @@ footer {
 	line-height: 5;
 	text-align: center;
 }
+
+section#cases {
+	display: flex;
+	flex-direction: row;
+	height:25vh;
+	
+	justify-content: space-between;
+}
+
+section#cases img { 
+	width: 50%;
+	
+
+
+}
+
