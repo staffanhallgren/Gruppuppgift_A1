@@ -206,7 +206,6 @@ li:target~li a {
 	text-align: center;
 }
 
-
 footer {
 	color: #fff;
 	background-color: #000;
@@ -214,4 +213,6 @@ footer {
 	height: 50px;
 	line-height: 5;
 	text-align: center;
+
 }
+
