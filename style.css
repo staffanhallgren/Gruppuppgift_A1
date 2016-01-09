@@ -1,22 +1,39 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
+
+/*---------------
+  video background
+----------------*/
+
+video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+ 		background: url(#) no-repeat;
+  	background-size: cover;
+  	transition: 1s opacity;
+	  filter: blur(7px);
+		-webkit-filter: blur(5px);
+}
+
 body {
 	font-family: Roboto, Georgia, sans-serif;
-	background-image: url(media/img/background.jpg);
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size:cover;
 	
 	/*Sticky Footer fix*/
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
+	min-height: 100vh;	
 }
 
 header {
 	position: fixed;
 	top: 0px;
-	height: 10vh;
 	width:100%;
 }
 
@@ -154,17 +171,19 @@ li:target~li a {
 
 /* Client section */
 
-#about, #work, #contact, #cases{
+#about, #contact, #clients, #cases{
   background-color: rgba(238, 250, 250, 0.8);
+	margin-bottom: 
 }
 
 #cases{
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
-	flex-grow: 1;
-	
+	flex-grow: 1;	
 }
+
+
 
 #cases img {
 	margin: 10px;
@@ -182,6 +201,7 @@ li:target~li a {
   flex-direction: column;
   flex-flow: row wrap;
   justify-content: space-around;
+	margin: 100px 0%;
 }
 
 #clients img {
@@ -202,6 +222,14 @@ li:target~li a {
 	margin: 100px 5%;
 }
 
+/*---------------
+  margin top, best practice??
+----------------*/
+section #statement{
+	margin-top:150px;
+}
+
+
 #statement p, h2 {
 	text-align: center;
 }
@@ -213,6 +241,5 @@ footer {
 	height: 50px;
 	line-height: 5;
 	text-align: center;
-
 }
 
