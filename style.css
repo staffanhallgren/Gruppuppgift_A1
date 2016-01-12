@@ -130,12 +130,85 @@ li:target~li a {
 }
 */
 
+/* ---- End of Navbar ---- */
+
+/* Client section */
+
+#about, #contact, #clients, #cases, #directions{
+  background-color: rgba(238, 250, 250, 0.8);
+	margin: 5%;
+	padding: 5%;
+}
+
+#cases{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	flex-grow: 1;	
+}
+
+
+
+#cases img {
+	margin: 10px;
+		  filter: gray; /* IE6-9*/
+  -webkit-filter: grayscale(1); /* Chrome & Safari 6+ */
+}
+
+#cases img:hover {
+  filter: none;
+  -webkit-filter: none;
+}
+
+#clients {
+  display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+#clients img {
+  max-width: 100%;
+  margin: 0 10px;
+  filter: gray; /* IE6-9*/
+  -webkit-filter: grayscale(1); /* Chrome & Safari 6+ */
+}
+
+#clients img:hover {
+  filter: none;
+  -webkit-filter: none;
+}
+
+/* end of client section */
+
+#statement p, h2 {
+	text-align: center;
+}
+
+#map {
+	height: 320px;
+	width: 80%;
+	margin: auto;
+}
+
+footer {
+	color: #fff;
+	background-color: #000;
+	font-size: 0.6em;
+	height: 50px;
+	line-height: 5;
+	text-align: center;
+}
+
+/*---------------
+  Desktop Media Query
+----------------*/
+
+@media only screen and (min-width: 641px) {
 
 /*---------------
   Desktop Navbar
 ----------------*/
-
-@media screen and (min-width: 641px) {
 	
 	nav > img {
 		float: left;
@@ -164,81 +237,12 @@ li:target~li a {
 	#menutoggle {
 		display: none;
 	}
-}
-
-
-/* ---- End of Navbar ---- */
-
-/* Client section */
-
-#about, #contact, #clients, #cases{
-  background-color: rgba(238, 250, 250, 0.8);
-}
-
-#cases{
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
-	flex-grow: 1;	
-}
-
-
-
-#cases img {
-	margin: 10px;
-		  filter: gray; /* IE6-9*/
-  -webkit-filter: grayscale(1); /* Chrome & Safari 6+ */
-}
-
-#cases img:hover {
-  filter: none;
-  -webkit-filter: none;
-}
-
-#clients {
-  display: flex;
-  flex-direction: column;
-  flex-flow: row wrap;
-  justify-content: space-around;
-	margin: 100px 0%;
-}
-
-#clients img {
-  max-width: 100%;
-  margin: 0 10px;
-  filter: gray; /* IE6-9*/
-  -webkit-filter: grayscale(1); /* Chrome & Safari 6+ */
-}
-
-#clients img:hover {
-  filter: none;
-  -webkit-filter: none;
-}
-
-/* end of client section */
-
-#about section {
-	margin: 100px 5%;
-}
-
+	
 /*---------------
-  margin top, best practice??
+  Desktop Map
 ----------------*/
-section #statement{
-	margin-top:150px;
+	#map {
+		height: 400px;
+		max-width: 800px	
+	}
 }
-
-
-#statement p, h2 {
-	text-align: center;
-}
-
-footer {
-	color: #fff;
-	background-color: #000;
-	font-size: 0.6em;
-	height: 50px;
-	line-height: 5;
-	text-align: center;
-}
-
