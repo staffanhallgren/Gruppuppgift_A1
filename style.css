@@ -172,8 +172,7 @@ li:target~li a {
 /* Client section */
 
 #about, #contact, #clients, #cases{
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
+  background-color: rgba(238, 250, 250, 0.8);
   margin-left: 5%;
   margin-right: 5%;
 }
@@ -222,6 +221,16 @@ li:target~li a {
 
 #about section {
 	margin: 100px 5%;
+}
+
+#contact a img {
+  width: 25%;
+}
+
+#social_media_icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 /*---------------
