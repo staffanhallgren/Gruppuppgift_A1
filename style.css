@@ -181,6 +181,24 @@ li:target~li a {
 
 /* end of client section */
 
+#contact a img {
+  width: 50%;
+}
+
+#social_media_icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#social_media_icons a {
+  text-align: center;
+}
+
+/*---------------
+  margin top, best practice??
+----------------*/
+
 #statement p, h2 {
 	text-align: center;
 }
@@ -245,4 +263,13 @@ footer {
 		height: 400px;
 		max-width: 800px	
 	}
+
+
+/*---------------
+  Social media icons
+----------------*/
+
+#contact a img {
+  width: 20%; 
+}
 }
