@@ -24,17 +24,18 @@ video {
 
 body {
 	font-family: Roboto, Georgia, sans-serif;
-	
+	color: white;
 	/*Sticky Footer fix*/
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;	
 }
 
-header {
+#top-header {
 	position: fixed;
 	top: 0px;
 	width:100%;
+	z-index: 999;
 }
 
 main {
@@ -47,12 +48,13 @@ main {
 ----------------*/
 
 nav {
-	background-color: rgba(1,1,1,0.5);
+	background-color: rgba(20,40,40,0.5);
 	min-height: 50px;
 	width: 100%;
 	position: fixed;
 	top: 0;
 	left: 0;
+	
 }
 
 nav > img {
@@ -69,7 +71,7 @@ nav li:first-child ~ li {
 	border-top: 2px groove;
 }
 
-nav li:first-child ~ li:hover {
+nav li:first-child ~ li:active {
 	background-color: rgba(10,10,10,0.5);
 }
 
@@ -132,15 +134,37 @@ li:target~li a {
 
 /* ---- End of Navbar ---- */
 
-/* Client section */
-
 #about, #contact, #clients, #cases, #directions{
-  background-color: rgba(238, 250, 250, 0.8);
+  background-color: rgba(20,40,40, 0.8);
 	margin: 5%;
+	border-radius: 3px;
+
+}
+
+#about, #clients, #cases, #contact{
+	margin-bottom: 75px;
+}
+
+#about, #contact, #directions{
 	padding: 5%;
 }
 
-#cases{
+#about{
+	margin-top: 150px;
+}
+
+#cases img, #clients img{
+-webkit-filter: grayscale(1); /* Chrome & Safari 6+ */
+}
+
+#cases img:hover, #clients img:hover {
+  filter: none;
+  -webkit-filter: none;
+}
+
+/*cases section*/
+
+#cases div{
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
@@ -151,16 +175,21 @@ li:target~li a {
 
 #cases img {
 	margin: 10px;
-		  filter: gray; /* IE6-9*/
-  -webkit-filter: grayscale(1); /* Chrome & Safari 6+ */
 }
 
-#cases img:hover {
-  filter: none;
-  -webkit-filter: none;
+h2{
+	display: inline-block;
+	border-bottom: 2px solid red;
+	}
+
+section  header{
+	text-align: center;
 }
 
-#clients {
+/*cases section*/
+
+/* Client section */
+#clients div{
   display: flex;
   flex-direction: column;
   flex-flow: row wrap;
@@ -168,17 +197,9 @@ li:target~li a {
 }
 
 #clients img {
-  max-width: 100%;
+
   margin: 0 10px;
-  filter: gray; /* IE6-9*/
-  -webkit-filter: grayscale(1); /* Chrome & Safari 6+ */
 }
-
-#clients img:hover {
-  filter: none;
-  -webkit-filter: none;
-}
-
 /* end of client section */
 
 #contact a img {
@@ -195,10 +216,6 @@ li:target~li a {
   text-align: center;
 }
 
-/*---------------
-  margin top, best practice??
-----------------*/
-
 #statement p, h2 {
 	text-align: center;
 }
@@ -207,6 +224,8 @@ li:target~li a {
 	height: 320px;
 	width: 80%;
 	margin: auto;
+	border-radius: 3px;
+	box-shadow: 2px 2px 10px 3px rgba(0,0,0,0.3);
 }
 
 footer {
@@ -256,12 +275,18 @@ footer {
 		display: none;
 	}
 	
+	
+	#about, #clients, #cases, #contact{
+	margin-bottom: 200px;
+}	
+	
 /*---------------
   Desktop Map
 ----------------*/
 	#map {
 		height: 400px;
-		max-width: 800px	
+		max-width: 800px;
+		
 	}
 
 
