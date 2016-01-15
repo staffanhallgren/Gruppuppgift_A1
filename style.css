@@ -138,7 +138,6 @@ li:target~li a {
   background-color: rgba(20,40,40, 0.8);
 	margin: 5%;
 	border-radius: 3px;
-
 }
 
 #about, #clients, #cases, #contact{
