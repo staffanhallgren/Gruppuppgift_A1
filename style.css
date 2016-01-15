@@ -220,6 +220,10 @@ section  header{
 	text-align: center;
 }
 
+address {
+  padding-bottom: 30px;
+}
+
 #map {
 	height: 320px;
 	width: 80%;
