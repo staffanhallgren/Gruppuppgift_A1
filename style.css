@@ -24,6 +24,8 @@ video {
 
 body {
 	font-family: Roboto, Georgia, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
 	color: white;
 	/*Sticky Footer fix*/
 	display: flex;
@@ -248,6 +250,7 @@ Cases info lightbox
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  border-top: 1px solid black;
 }
 
 #social_media_icons a {
