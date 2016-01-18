@@ -112,6 +112,18 @@ a.menuopen, a.menuclose {
 	height: 50px;
 }
 
+a.menuclose{
+	display: none;
+}
+
+li#menutoggle:target a.menuclose {
+	display: block;
+}
+
+li#menutoggle:target a.menuopen {
+	display: none;
+}
+
 li:target .menuclose {
 	z-index: 1000;
 }
@@ -217,6 +229,12 @@ Cases info lightbox
 	width: 90%;
 	max-width: 300px;
 	margin: auto;
+}
+
+#cases .lightbox a:last-child img {
+	height: 1em;
+	width: 1em;
+	margin: 0;
 }
 
 /* End of cases section*/
