@@ -9,10 +9,17 @@
 </head>
 
 <body>
+	<div id="bg-img">
+		<img src="media/video/background_slide_1.jpg">
+	</div>
 	
-	<video autoplay muted poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" loop>
-		<source src="media/video/bg_video_h264.mp4" type="video/webm">
+
+	<video autoplay  poster="media/video/background_slide_1.jpg" id="bg-vid" loop>
+		<source src="media/video/bg_video_h264.mp4" type="video/mp4">
+
+	
 		<source src="media/video/" type="video/mp4">
+
 	</video>
 
 
@@ -33,6 +40,7 @@
 	</header>
 	
 	<main class="wrapper">
+	<div class="contentwrapper">
 	<section id="about">
 		<section id="statement">
 			<header>
@@ -84,11 +92,12 @@
 		<div id="case-a-info" class="lightbox">
 			<article>
 				<img src="media/img/cases/css_zengarden_arvid.jpg" alt="Screenshot of Arvid's Zengarden site">
-				<h3>Arvid's Zengarden</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime, sit deserunt. 
-				Saepe alias velit possimus numquam dignissimos deleniti voluptas.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-				Neque iure mollitia repellendus nemo ratione autem? Minima, mollitia, officiis! Animi, deleniti.</p>
+				<h3>Arvid's Zen Garden</h3>
+					<p>CSS Zen Garden is a demonstration of what can be accomplished through CSS-based design. CSS allows complete and total control over the style of a hypertext document.</p>
+				<p> The only way this can be illustrated in a way that gets people excited is by demonstrating what it can truly be, once the reins are placed in the hands of those able to create beauty from structure.
+</p>
+		<p>
+This design is by Arvid Norlin.</p>
 				<a href="http://arvidnorlin.github.io/htmlcss_uppg2/" target="_blank">Visit site</a>
 				<br>
 				<br>
@@ -98,11 +107,12 @@
 		<div id="case-b-info" class="lightbox">
 			<article>
 				<img src="media/img/cases/css_zengarden_staffan.jpg" alt="Screenshot of Staffan's Zengarden site">
-				<h3>Staffan's Zengarden</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-				Voluptates suscipit amet accusamus qui architecto error obcaecati, perferendis pariatur possimus excepturi!</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-				Voluptas iusto accusamus in, nobis illum recusandae, molestias nulla. Veniam sapiente, minus?</p>
+				<h3>Staffan's Zen Garden</h3>
+					<p>CSS Zen Garden is a demonstration of what can be accomplished through CSS-based design. CSS allows complete and total control over the style of a hypertext document.</p>
+				<p> The only way this can be illustrated in a way that gets people excited is by demonstrating what it can truly be, once the reins are placed in the hands of those able to create beauty from structure.
+</p>
+		<p>
+This design is by Staffan Hallgren.</p>
 				<a href="http://staffanhallgren.github.io/" target="_blank">Visit site</a>
 				<br>
 				<br>
@@ -112,15 +122,18 @@
 		<div id="case-c-info" class="lightbox">
 			<article>
 				<img src="media/img/cases/css_zengarden_eric.jpg" alt="Screenshot of Eric's Zengarden site">
-				<h3>Eric's Zengarden</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-				Vitae deleniti fuga cumque error, facilis sed tenetur voluptates nisi doloremque illum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-				Sunt impedit repellendus amet iure placeat explicabo error magni recusandae, natus dolorum?</p>
-				<a href="#" target="_blank">Visit site</a>
-				<br>
-				<br>
-				<a href="#_"><img src="media/img/menu_close_black.png" alt="Close icon">Close</a>
+
+				<h3>Eric's Zen Garden</h3>
+				<p>CSS Zen Garden is a demonstration of what can be accomplished through CSS-based design. CSS allows complete and total control over the style of a hypertext document.</p>
+				<p> The only way this can be illustrated in a way that gets people excited is by demonstrating what it can truly be, once the reins are placed in the hands of those able to create beauty from structure.
+</p>
+		<p>
+This design is by Eric Schempp.</p>
+			<p class="link">	<a href="http://ekande.github.io/" target="_blank">Visit site</a>
+				</p>
+				<p class="link">
+				<a href="#_">Close</a>
+				</p>
 			</article>
 		</div>
 
@@ -178,6 +191,7 @@
 		</header>
 		<div id="map"></div>
 	</section>
+	</div>
 	</main>
 	
 	<footer>
@@ -186,5 +200,9 @@
 	<script src="map.js" type="text/javascript"></script>
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGO5g2NW9r1jXfgJPPQ-6Am50y7BHF-7E&signed_in=true&callback=initMap"></script>
+<!--[if lt IE 9]> 
+  <script>document.createElement('video')</script>
+<![endif]-->
+        
 </body>
 </html>
