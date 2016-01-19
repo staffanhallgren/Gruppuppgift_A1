@@ -62,7 +62,7 @@ background image
 }
 
 /*Sticky Footer fix*/
-main {
+.wrapper {
 		flex-grow: 1;
 }
 
