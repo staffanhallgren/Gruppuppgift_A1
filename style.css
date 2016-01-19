@@ -4,7 +4,7 @@
 /*---------------
   video background
 ----------------*/
-video{
+video {
 	display: none;
 }
 
@@ -16,24 +16,40 @@ body {
 	flex-direction: column;
 	min-height: 100vh;	
 }
-#bg-img{
+
+/*------------------------
+background image animation
+------------------------*/
+@keyframes opacity {
+	0%{
+		opacity:0;
+	}	
+		100%{
+			opacity:1;
+	}
+}
+/*--------------
+background image
+--------------*/
+#bg-img {
 		display: block;
     position: fixed;
-    top: 50%;
-    left: 50%;
+    top: 0%;
+    left: -500px;
     min-width: 100%;
     min-height: 100%;
     width: auto;
     height: auto;
     z-index: -100;
-		transform: translateX(-50%) translateY(-50%);
-		-ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
- 		background: url(#) no-repeat;
-  	background-size: cover;
 		-webkit-filter:blur(7px);
+		animation-timing-function: ease-in; 
+	animation-name: opacity;
+	animation-duration: 3s;
+	animation-delay: 0s;
+	animation-play-state: running;
 }
+
+
 
 
 #top-header {
@@ -43,25 +59,22 @@ body {
 	z-index: 999;
 }
 
+/*Sticky Footer fix*/
 main {
-	/*Sticky Footer fix*/
-	flex-grow: 1;
+		flex-grow: 1;
 }
 
-.wrapper{
+.wrapper {
 	position:relative;
 	height:1px;
 	margin-top: 50px;
 	overflow:auto;
 	overflow-x:hidden;
-	
 }
 
 
-.contentwrapper{
+.contentwrapper {
 	max-height:100%;
-	
-	
 }
 
 /*---------------
@@ -75,7 +88,6 @@ nav {
 	position: fixed;
 	top: 0;
 	left: 0;
-	
 }
 
 nav > img {
@@ -155,11 +167,13 @@ li:target~li a {
 
 /* ---- End of Navbar ---- */
 
+/*-------------
+content styling
+-------------*/
 #about, #contact, #clients, #cases, #directions{
   background-color: rgba(20,40,40, 0.8);
 	margin: 5%;
 	border-radius: 3px;
-
 }
 
 #about, #clients, #cases, #contact{
@@ -207,6 +221,7 @@ section  header{
 	text-align: center;
 }
 
+
 /*----------
 Cases info lightbox
 ----------*/
@@ -252,7 +267,6 @@ Cases info lightbox
 }
 
 #clients img {
-
   margin: 0 10px;
 }
 /* end of client section */
