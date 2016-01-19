@@ -154,14 +154,12 @@ li:target~li a {
 	margin-top: 150px;
 }
 
-#cases a img, #clients a img{
--webkit-filter: grayscale(1); /* Chrome & Safari 6+ */
+/*styling cases & clients img*/
+
+  #cases a img, #clients a img{
+    opacity: 0.5;
 }
 
-#cases a img:hover, #clients a img:hover {
-  filter: none;
-  -webkit-filter: none;
-}
 
 /*cases section*/
 
@@ -250,7 +248,8 @@ Cases info lightbox
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-top: 1px solid black;
+  border-top: 2px solid black;
+  padding-top: 30px;
 }
 
 #social_media_icons a {
@@ -325,6 +324,21 @@ footer {
 	#about, #clients, #cases, #contact{
 	margin-bottom: 200px;
 }	
+  
+/*---------------------------------------
+Cases & Clients hover filter for dekstop
+---------------------------------------*/
+  
+  
+  #cases a img, #clients a img{
+-webkit-filter: grayscale(1); /* Chrome & Safari 6+ */
+}
+
+#cases a img:hover, #clients a img:hover {
+  filter: none;
+  -webkit-filter: none;
+  opacity: 1;
+}
 	
 /*---------------
   Desktop Map
