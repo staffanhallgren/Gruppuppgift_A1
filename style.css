@@ -84,7 +84,7 @@ background image
 ----------------*/
 
 nav {
-	background-color: rgba(20,40,40,0.5);
+	background-color: rgb(20,40,40);
 	min-height: 50px;
 	width: 100%;
 	position: fixed;
@@ -216,6 +216,10 @@ h1, h2, h3 {
     opacity: 0.5;
 }
 
+  #cases a:active img, #clients a:active img{
+    opacity: 1;
+}
+
 
 /*cases section*/
 
@@ -270,6 +274,7 @@ Cases info lightbox
 	margin-top: 5%;
 	padding: 5% 10%;
 	border-radius: 3px;
+	overflow: auto;
 }
 
 .lightbox article img {
@@ -294,6 +299,7 @@ Cases info lightbox
 }
 
 .lightbox article a{
+	color: #000;
 	text-decoration: none;
 	font-weight: bold;
 }
@@ -357,6 +363,10 @@ address {
   padding-bottom: 30px;
 }
 
+address a {
+	color: #fff;
+}
+
 #map {
 	height: 320px;
 	width: 80%;
@@ -395,6 +405,10 @@ video {
 /*---------------
   Desktop Navbar
 ----------------*/
+	
+	nav {
+	background-color: rgba(20,40,40,0.5);
+	}
 	
 	nav > img {
 		float: left;
