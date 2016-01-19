@@ -241,19 +241,49 @@ Cases info lightbox
 }
 
 .lightbox article {
-	background-color: #333;
+	background-color: #dddddd;
+	color:black;
 	max-width: 60%;
 	max-height: 80%;
 	text-align: center;
 	margin: auto;
 	margin-top: 5%;
 	padding: 5% 10%;
+	border-radius: 3px;
 }
 
 .lightbox article img {
+	display:block;
 	width: 90%;
 	max-width: 300px;
 	margin: auto;
+	box-shadow: 2px 2px 15px;
+}
+
+.lightbox h3{
+	display:inline-block;
+	border-bottom: 2px solid red;
+}
+
+.lightbox p{
+	text-align: left;
+}
+
+.lightbox .link {
+	text-align: center;
+}
+
+.lightbox article a{
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.lightbox article a:visited{
+	color:#000;
+}
+
+.lightbox article a:hover{
+	text-decoration: underline;
 }
 
 /* End of cases section*/
