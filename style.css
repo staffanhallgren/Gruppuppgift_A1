@@ -4,22 +4,8 @@
 /*---------------
   video background
 ----------------*/
-
-video { 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    transform: translateX(-50%) translateY(-50%);
- 		background: url(#) no-repeat;
-  	background-size: cover;
-  	transition: 1s opacity;
-	  filter: blur(7px);
-		-webkit-filter: blur(5px);
+video {
+	display: none;
 }
 
 body {
@@ -33,6 +19,41 @@ body {
 	min-height: 100vh;	
 }
 
+/*------------------------
+background image animation
+------------------------*/
+@keyframes opacity {
+	0%{
+		opacity:0;
+	}	
+		100%{
+			opacity:1;
+	}
+}
+/*--------------
+background image
+--------------*/
+#bg-img {
+		display: block;
+    position: fixed;
+    top: 0%;
+    left: -500px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+		-webkit-filter:blur(7px);
+		animation-timing-function: ease-in; 
+	animation-name: opacity;
+	animation-duration: 3s;
+	animation-delay: 0s;
+	animation-play-state: running;
+}
+
+
+
+
 #top-header {
 	position: fixed;
 	top: 0px;
@@ -40,9 +61,22 @@ body {
 	z-index: 999;
 }
 
+/*Sticky Footer fix*/
 main {
-	/*Sticky Footer fix*/
-	flex-grow: 1;
+		flex-grow: 1;
+}
+
+.wrapper {
+	position:relative;
+	height:1px;
+	margin-top: 50px;
+	overflow:auto;
+	overflow-x:hidden;
+}
+
+
+.contentwrapper {
+	max-height:100%;
 }
 
 /*---------------
@@ -56,11 +90,11 @@ nav {
 	position: fixed;
 	top: 0;
 	left: 0;
-	
 }
 
 nav > img {
 	height: 50px;
+  display: block;
 }
 
 nav ul {
@@ -114,6 +148,18 @@ a.menuopen, a.menuclose {
 	height: 50px;
 }
 
+a.menuclose{
+	display: none;
+}
+
+li#menutoggle:target a.menuclose {
+	display: block;
+}
+
+li#menutoggle:target a.menuopen {
+	display: none;
+}
+
 li:target .menuclose {
 	z-index: 1000;
 }
@@ -136,6 +182,11 @@ li:target~li a {
 
 /* ---- End of Navbar ---- */
 
+
+/*-------------
+content styling
+-------------*/
+
 #about, #contact, #work, #directions{
   background-color: rgba(20,40,40, 0.8);
 	margin: 5%;
@@ -152,6 +203,10 @@ li:target~li a {
 
 #about{
 	margin-top: 150px;
+}
+
+h1, h2, h3 {
+  line-height: 1.5em;
 }
 
 /*styling cases & clients img*/
@@ -185,6 +240,7 @@ section  header{
 	text-align: center;
 }
 
+
 /*----------
 Cases info lightbox
 ----------*/
@@ -204,19 +260,55 @@ Cases info lightbox
 }
 
 .lightbox article {
-	background-color: #333;
+	background-color: #dddddd;
+	color:black;
 	max-width: 60%;
 	max-height: 80%;
 	text-align: center;
 	margin: auto;
 	margin-top: 5%;
 	padding: 5% 10%;
+	border-radius: 3px;
 }
 
 .lightbox article img {
+	display:block;
 	width: 90%;
 	max-width: 300px;
 	margin: auto;
+	box-shadow: 2px 2px 15px;
+}
+
+.lightbox h3{
+	display:inline-block;
+	border-bottom: 2px solid red;
+}
+
+.lightbox p{
+	text-align: left;
+}
+
+.lightbox .link {
+	text-align: center;
+}
+
+.lightbox article a{
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.lightbox article a:visited{
+	color:#000;
+}
+
+.lightbox article a:hover{
+	text-decoration: underline;
+}
+
+#cases .lightbox a:last-child img {
+	height: 1em;
+	width: 1em;
+	margin: 0;
 }
 
 /* End of cases section*/
@@ -235,7 +327,6 @@ Cases info lightbox
 }
 
 #clients img {
-
   margin: 0 10px;
 }
 /* end of client section */
@@ -288,6 +379,18 @@ footer {
 
 @media only screen and (min-width: 641px) {
 
+	
+video { 
+		display: block;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    min-width: 100%;
+    min-height: 100%;
+		z-index: -100;
+    filter: blur(5px);
+		-webkit-filter: blur(5px);	
+	}
 /*---------------
   Desktop Navbar
 ----------------*/
