@@ -190,6 +190,7 @@ content styling
 
 #about, #work, #contact, #directions {
 	padding: 5%;
+  text-align: center;
 }
 
 #about {
@@ -231,10 +232,6 @@ cases section
 h2 {
 	display: inline-block;
 	border-bottom: 2px solid #ff0000;
-}
-
-section  header{
-	text-align: center;
 }
 
 /*-----------------
@@ -346,9 +343,6 @@ Contact section
   text-align: center;
 }
 
-#statement p, h2 {
-	text-align: center;
-}
 
 address {
   text-align: center;
@@ -383,6 +377,12 @@ footer {
 	line-height: 5;
 	text-align: center;
 }
+
+
+
+
+
+
 
 
 
