@@ -11,12 +11,12 @@ video {
 
 body {
 	font-family: Roboto, Georgia, sans-serif;
-  font-size: 1em;
-  line-height: 1.5em;
+	font-size: 1em;
+	line-height: 1.5em;
 	color: white;
 	/*Sticky Footer fix*/
 	display: flex;
-  flex-direction: column;
+	flex-direction: column;
 	min-height: 100vh;	
 }
   
@@ -28,7 +28,7 @@ background image animation
 	0%{
 		opacity:0;
 	}	
-  100%{
+	100%{
 		opacity:1;
 	}
 }
@@ -38,19 +38,19 @@ background image
 --------------*/
 
 #bg-img {
-  display: block;
-  position: fixed;
-  top: 0%;
-  left: -500px;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  -webkit-filter:blur(7px);
-  animation-timing-function: ease-in; 
-  animation-name: opacity;
-  animation-duration: 3s;
+	display: block;
+	position: fixed;
+	top: 0%;
+	left: -500px;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	-webkit-filter:blur(7px);
+	animation-timing-function: ease-in; 
+	animation-name: opacity;
+	animation-duration: 3s;
 	animation-delay: 0s;
 	animation-play-state: running;
 }
@@ -67,7 +67,7 @@ Sticky Footer fix
 ----------------*/
 
 .wrapper {
-  flex-grow: 1;
+	flex-grow: 1;
 }
 
 .wrapper {
@@ -90,14 +90,11 @@ nav {
 	background-color: rgb(20,40,40);
 	min-height: 50px;
 	width: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
 }
 
 nav > img {
 	height: 50px;
-  display: block;
+	display: block;
 }
 
 nav ul {
@@ -128,7 +125,6 @@ nav a:link, nav a:visited {
 
 li {
 	list-style-type: none;
-	height: 0px;
 	display: none;
 	text-align: center;
 }
@@ -179,7 +175,7 @@ content styling
 -------------*/
 
 #about, #contact, #work, #directions {
-  background-color: rgba(20,40,40, 0.8);
+	background-color: rgba(20,40,40, 0.8);
 	margin: 5%;
 	border-radius: 3px;
 }
@@ -190,16 +186,18 @@ content styling
 
 #about, #work, #contact, #directions {
 	padding: 5%;
-  text-align: center;
+	text-align: center;
 }
 
 #about {
 	margin-top: 150px;
-  text-align: center;
+	text-align: center;
 }
 
-h1, h2, h3 {
-  line-height: 1.5em;
+h2, h3 {
+	line-height: 1.5em;
+	display: inline-block;
+	border-bottom: 2px solid #ff0000;
 }
 
 /*-------------------------
@@ -207,11 +205,11 @@ styling cases & clients img
 --------------------------*/
 
 #cases a img, #clients a img {
-  opacity: 0.5;
+	opacity: 0.5;
 }
 
 #cases a:active img, #clients a:active img {
-  opacity: 1;
+	opacity: 1;
 }
 
 /*-----------
@@ -229,10 +227,6 @@ cases section
 	margin: 10px;
 }
 
-h2 {
-	display: inline-block;
-	border-bottom: 2px solid #ff0000;
-}
 
 /*-----------------
 Cases info lightbox
@@ -273,11 +267,6 @@ Cases info lightbox
 	box-shadow: 2px 2px 15px;
 }
 
-.lightbox h3 {
-	display: inline-block;
-	border-bottom: 2px solid #ff0000;
-}
-
 .lightbox p {
 	text-align: left;
 }
@@ -300,12 +289,6 @@ Cases info lightbox
 	text-decoration: underline;
 }
 
-#cases .lightbox a:last-child img {
-	height: 1em;
-	width: 1em;
-	margin: 0;
-}
-
 /* End of case info lightbox*/
 
 /*------------
@@ -313,14 +296,14 @@ Client section
 -------------*/
 
 #clients div {
-  display: flex;
-  flex-direction: column;
-  flex-flow: row wrap;
-  justify-content: space-around;
+	display: flex;
+	flex-direction: column;
+	flex-flow: row wrap;
+	justify-content: space-around;
 }
 
 #clients img {
-  margin: 0 10px;
+	margin: 0 10px; /**ndra px till % (horisontalt)*/
 }
 
 /*-------------
@@ -328,25 +311,25 @@ Contact section
 -------------*/
 
 #contact a img {
-  width: 50%;
+	width: 50%;
 }
 
 #social_media_icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  border-top: 2px solid #000000;
-  padding-top: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-top: 2px solid #000000;
+	padding-top: 30px;
 }
 
 #social_media_icons a {
-  text-align: center;
+	text-align: center;
 }
 
 
 address {
-  text-align: center;
-  padding-bottom: 30px;
+	text-align: center;
+	padding-bottom: 30px;
 }
 
 address a {
@@ -400,15 +383,15 @@ Video background
 ----------------*/
 
 video { 
-  display: block;
-  position: fixed;
-  top: 0%;
-  left: 0%;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -100;
-  filter: blur(5px);
-  -webkit-filter: blur(5px);	
+	display: block;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -100;
+	filter: blur(5px);
+	-webkit-filter: blur(5px);	
 }
   
 /*---------------
@@ -416,55 +399,58 @@ video {
 ----------------*/
 
 nav {
-  background-color: rgba(20,40,40,0.5);
+	background-color: rgba(20,40,40,0.5);
 }
 	
 nav > img {
-  float: left;
+	float: left;
 }
 		
 nav ul {
-  display: flex;
-  height: 50px;
-  justify-content: space-around;
+	display: flex;
+	justify-content: space-around;
 }
 	
 nav ul li {
-  display: inline;
-  height: auto;
-  flex-grow: 1;
+	display: inline;
+	height: auto;
+	flex-grow: 1;
 }
 	
 nav li:first-child ~li {
-  border-top: none;
+	border-top: none;
 }
 	
 nav li:first-child ~ li:hover {
-  background-color: rgba(10,10,10,0.5);
+	background-color: rgba(10,10,10,0.5);
 }
 	
 #menutoggle {
-  display: none;
+	display: none;
 }
 	
+
+/*---------------------------------------
+Content styling desktop
+---------------------------------------*/	
 	
-#about, #work, #contact {
+#about, #work, #contact {  /*Vad gör denna här?*/
 	margin-bottom: 200px;
 }	
   
 /*---------------------------------------
-Cases & Clients hover filter for dekstop
+Cases & Clients hover filter for desktop
 ---------------------------------------*/
   
   
 #cases a img, #clients a img {
-  -webkit-filter: grayscale(1); /* Chrome & Safari 6+ */
+	-webkit-filter: grayscale(1); /* Chrome & Safari 6+ */
 }
 
 #cases a img:hover, #clients a img:hover {
-  filter: none;
-  -webkit-filter: none;
-  opacity: 1;
+	filter: none;
+	-webkit-filter: none;
+	opacity: 1;
 }
   
 /*-----------------------
@@ -472,15 +458,15 @@ Lightbox size for desktop
 -----------------------*/
   
 .lightbox article {
-  max-height: 70%;
+	max-height: 70%;
 }
 	
 /*---------------
   Desktop Map
 ----------------*/
 #map {
-  height: 400px;
-  max-width: 800px;
+	height: 400px;
+	max-width: 800px;
 }
 
 /*---------------
@@ -488,6 +474,6 @@ Lightbox size for desktop
 ----------------*/
 
 #contact a img {
-  width: 20%; 
+	width: 20%; 
 }
 }
