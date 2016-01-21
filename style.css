@@ -87,7 +87,7 @@ Sticky Footer fix
 ----------------*/
 
 nav {
-	background-color: rgb(20,40,40);
+	background-color: #2A2F36;
 	min-height: 50px;
 	width: 100%;
 }
@@ -175,7 +175,7 @@ content styling
 -------------*/
 
 #about, #contact, #work, #directions {
-	background-color: rgba(20,40,40, 0.8);
+  background-color: rgba(42,47,54, 0.8);
 	margin: 5%;
 	border-radius: 3px;
 }
@@ -192,6 +192,10 @@ content styling
 #about {
 	margin-top: 150px;
 	text-align: center;
+}
+
+#cases {
+  margin-bottom: 100px;
 }
 
 h2, h3 {
@@ -226,7 +230,6 @@ cases section
 #cases a img {
 	margin: 10px;
 }
-
 
 /*-----------------
 Cases info lightbox
@@ -326,7 +329,6 @@ Contact section
 	text-align: center;
 }
 
-
 address {
 	text-align: center;
 	padding-bottom: 30px;
@@ -399,7 +401,7 @@ video {
 ----------------*/
 
 nav {
-	background-color: rgba(20,40,40,0.5);
+  background-color: rgba(42,47,54,0.5);
 }
 	
 nav > img {
