@@ -314,10 +314,6 @@ Client section
 Contact section
 -------------*/
 
-#contact a img {
-	width: 50%;
-}
-
 #social_media_icons {
 	display: flex;
 	flex-direction: row;
@@ -469,13 +465,5 @@ Lightbox size for desktop
 #map {
 	height: 400px;
   width: 60%;
-}
-
-/*---------------
-  Social media icons
-----------------*/
-
-#contact a img {
-	width: 20%; 
 }
 }
