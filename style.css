@@ -93,7 +93,7 @@ nav {
 	width: 100%;
 }
 
-nav > img {
+nav > a img {
 	height: 50px;
 	display: block;
 }
@@ -405,7 +405,7 @@ nav {
   background-color: rgba(42,47,54,0.5);
 }
 	
-nav > img {
+nav > a img {
 	float: left;
 }
 		
