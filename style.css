@@ -69,9 +69,6 @@ Sticky Footer fix
 
 .wrapper {
 	flex-grow: 1;
-}
-
-.wrapper {
 	position: relative;
 	height: 1px;
 	margin-top: 50px;
