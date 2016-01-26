@@ -13,8 +13,8 @@ body {
 	font-family: Roboto, Georgia, sans-serif;
 	font-size: 1em;
 	line-height: 1.5em;
-	color: white;
-  -webkit-overflow-scrolling: touch;
+	color: #fff;
+	-webkit-overflow-scrolling: touch;
 	/*Sticky Footer fix*/
 	display: flex;
 	flex-direction: column;
@@ -43,12 +43,10 @@ background image
 	position: fixed;
 	top: 0%;
 	left: -500px;
-	min-width: 100%;
-	min-height: 100%;
-	width: auto;
-	height: auto;
+	width: 100%;
+	height: 100%;
 	z-index: -100;
-	-webkit-filter:blur(7px);
+	-webkit-filter: blur(7px);
 	animation-timing-function: ease-in; 
 	animation-name: opacity;
 	animation-duration: 3s;
@@ -96,7 +94,6 @@ nav > a img {
 }
 
 nav ul {
-	color: #fff;
 	margin: 0;
 	padding: 0;
 }
@@ -178,7 +175,7 @@ content styling
 	border-radius: 3px;
 }
 
-#about, #work, #contact {
+#about, #work, #contact, #directions {
 	margin-bottom: 75px;
 }
 
@@ -316,7 +313,7 @@ Client section
 }
 
 #clients img {
-	margin: 0 10px; /**ndra px till % (horisontalt)*/
+	margin: 0 10%;
 }
 
 /*-------------
@@ -367,13 +364,6 @@ footer {
 	line-height: 5;
 	text-align: center;
 }
-
-
-
-
-
-
-
 
 
 
@@ -441,7 +431,7 @@ nav li:first-child ~ li:hover {
 Content styling desktop
 ---------------------------------------*/	
 	
-#about, #work, #contact {  /*Vad gör denna här?*/
+#about, #work, #contact {
 	margin-bottom: 200px;
 }	
   
@@ -473,6 +463,6 @@ Lightbox size for desktop
 ----------------*/
 #map {
 	height: 400px;
-  width: 60%;
+	width: 60%;
 }
 }
