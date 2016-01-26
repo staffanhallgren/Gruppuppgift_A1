@@ -16,14 +16,30 @@ body {
 	color: #fff;
 	-webkit-overflow-scrolling: touch;
 	/*Sticky Footer fix*/
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	min-height: 100vh;
 }
   
 /*------------------------
 background image animation
 ------------------------*/
+
+@-webkit-keyframes opacity {
+	0%{
+		opacity:0;
+	}	
+	100%{
+		opacity:1;
+	}
+}
 
 @keyframes opacity {
 	0%{
@@ -47,11 +63,16 @@ background image
 	height: 100%;
 	z-index: -100;
 	-webkit-filter: blur(7px);
-	animation-timing-function: ease-in; 
-	animation-name: opacity;
-	animation-duration: 3s;
-	animation-delay: 0s;
-	animation-play-state: running;
+	-webkit-animation-timing-function: ease-in;
+	        animation-timing-function: ease-in; 
+	-webkit-animation-name: opacity; 
+	        animation-name: opacity;
+	-webkit-animation-duration: 3s;
+	        animation-duration: 3s;
+	-webkit-animation-delay: 0s;
+	        animation-delay: 0s;
+	-webkit-animation-play-state: running;
+	        animation-play-state: running;
 }
 
 #top-header {
@@ -66,7 +87,10 @@ Sticky Footer fix
 ----------------*/
 
 .wrapper {
-	flex-grow: 1;
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
 	position: relative;
 	height: 1px;
 	margin-top: 50px;
@@ -228,10 +252,20 @@ cases section
 ------------*/
 
 #cases div#case-previews {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
-	flex-grow: 1;	
+	-webkit-flex-flow: row wrap;
+	    -ms-flex-flow: row wrap;
+	        flex-flow: row wrap;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;	
 }
 
 #cases a img {
@@ -306,10 +340,21 @@ Client section
 -------------*/
 
 #clients div {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	flex-flow: row wrap;
-	justify-content: space-around;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-flex-flow: row wrap;
+	    -ms-flex-flow: row wrap;
+	        flex-flow: row wrap;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
 }
 
 #clients img {
@@ -321,9 +366,19 @@ Contact section
 -------------*/
 
 #social_media_icons {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	border-top: 2px solid #000000;
 	padding-top: 30px;
 }
@@ -404,14 +459,22 @@ nav > a img {
 }
 		
 nav ul {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
 }
 	
 nav ul li {
 	display: inline;
 	height: auto;
-	flex-grow: 1;
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
 }
 	
 nav li:first-child ~li {
