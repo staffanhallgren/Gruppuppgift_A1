@@ -69,9 +69,6 @@ Sticky Footer fix
 
 .wrapper {
 	flex-grow: 1;
-}
-
-.wrapper {
 	position: relative;
 	height: 1px;
 	margin-top: 50px;
@@ -386,7 +383,7 @@ footer {
   Desktop Media Query
 ----------------*/
 
-@media only screen and (min-width: 641px) {
+@media only screen and (min-width: 768px) {
 
 /*---------------
 Video background
